@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+@font-face {
+    font-family: Playwrite;
+    src: url(/Users/reedhoward/Desktop/Playwrite_AU_NSW/static/PlaywriteAUNSW-Regular.ttf);
+  }
+
+.wrapper{
+    width: 100%;
+    height: 600px;
+    margin-inline: auto;
+    background-image: url(Web120_Restaurant/Photos/jakub-kapusnak-tEVisOXz26Y-unsplash.jpg);
+    background-attachment: fixed;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-color: #3D4127;
+}
+
+
+
+header{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 7rem;
+    margin-bottom: 0;
+}
+
+
+h1{
+    font-family: "Playwrite", sans-serif;
+    color: white;
+    font-size: 120px;
+}
+
+h2{
+    color: white;
+    font-size: 50px;
+}
+
+h3{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+    text-align: left;
+    padding: 20px 10px 20px 10px;
+    margin: 20px;
+
+}
+
+ul{
+    list-style-type: none;
+    margin-top: -20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #3D4127;
+    
+}
+
+li {
+    float: right;
+}
+
+li a{
+    display: block;
+    color: wheat;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #636B2F;
+}
+
+#welcome{
+    padding: 30px;
+    margin: 20px;
+    width: auto;
+}
+
+button{
+    background-color: #3D4127;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button:hover{
+    background-color: #636B2F;
+    color: wheat;
+    border-radius: 30px;
+}
+
+.btn-nav{
+    justify-content: center;
+}
+
+#order{
+    padding: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    
+}
+
+#reservation{
+    padding: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#cater{
+    margin-top: 10px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    background-color: #3D4127;
+    color: white;
+}
+
+#order1, #cater1, #reservation1{
+    align-items: center;
+
+}
+
+.orderImg, .reservationImg {
+    width: auto;
+    padding: 20px;
+    height: 400px;
+    border-radius: 35px;
+    float: right;
+    background-attachment: fixed;
+    box-shadow: 10px 10px 5px #BAC095;
+}
+.caterImg{
+    width: auto;
+    padding: 20px;
+    height: 400px;
+    border-radius: 35px;
+    float: left;
+    background-attachment: fixed;
+}
+
+#orderBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: #3D4127;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+.footerImg{
+    width: 100%;
+    height: 300px;
+    margin-inline: auto;
+    background-image: url(Web120_Restaurant/Photos/quin-engle-kzk5WrJlxds-unsplash.jpg);
+    background-attachment: fixed;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-color: #3D4127;
+}
+
+#footerP{
+    padding: 0;
+    text-decoration: none;
+}
+
+#footerP a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 16px;
+        padding: 10;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li{
+        float: none;
+    }
+
+    button{
+        width: 100%;
+        padding: 12px;
+    }
+
+    .orderImg, .reservationImg, .caterImg{
+        height: auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+}
+
+/* For tablets*/
+@media (min-width: 601px) and (max-width: 1024px){
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    float:none;
+    margin: 0 10px;
+}
+
+.orderImg, .reservationImg, .caterImg{
+    height: 300px;
+    width: auto;
+}
+
+footer{
+    flex-direction: row;
+    justify-content: space-between;
+}
+}
